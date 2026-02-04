@@ -1,0 +1,23 @@
+/* Stylesheet for index.html */
+
+/* Universal selector */
+    * {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color:antiquewhite;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+/* Button Styles */
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 20px;
+        background-color: lightgray;
+    }
+
+    button:hover {
+        cursor:not-allowed;
+        background-color: lightblue;
+    }
