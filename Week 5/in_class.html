@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>In class Example</title>
+        <script>
+            function buttonText(){
+                document.getElementById("Red").style.color = "red";
+            } 
+            function buttonAlert(){
+                alert("Button Clicked");
+            }
+            function buttonPrint(){
+                console.log("Button Clicked");
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1 id="Red">In class Example</h1>
+        <p>This is an example of a simple webpage created in class.</p>
+        <div>
+            <button onclick="buttonText()">Change Text Color</button>
+            <button onclick="buttonAlert()">Alert on Webpage</button>
+            <button onclick="buttonPrint()">Print message</button>
+        </div>
+    </body>
+</html>

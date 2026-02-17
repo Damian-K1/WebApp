@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Me</title>
+    <style>
+        body{
+            padding: 20px;
+        }
+        p{
+            font-size: 20px;
+            padding: 0px 20px;
+            color: navy;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function ChangeColor(){
+            document.getElementsByTagName("h1").style.color = "red";
+        }
+        function buttonClick(){
+            alert("Button Clicked");
+        }
+
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center; text-decoration:overline underline;">About Me</h1>
+    
+    <p>My personal interests stem more towards the hardware side of technology. 
+        I enjoy building and upgrading computers, as well as exploring new hardware innovations.</p>
+    
+    <p>I also enjoy playing games in my free time. Right now my favorite games are Overwatch 2, Marvel Rivals, and Hollow Knight: Silksong</p>
+    
+    <div class="center">
+        <p>Hover over the button to change your cursor.</p>
+        <button onclick="buttonClick()">Magic Button</button>
+
+    </div>
+</body>
+</html>
