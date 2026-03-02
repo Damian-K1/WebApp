@@ -1,0 +1,75 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.card {
+    width: 3.5in;
+    height:2in;
+    display:flex;
+    flex-direction:column;
+    background-color: white;
+    position:relative;
+}
+.top {
+    height:80%;
+    background-color: lightgrey;
+}
+.bottom {
+    height:20%;
+    background-color: darkslategrey;
+}
+.photo-column {
+    position: absolute;
+    height:100%;
+    width:30%;
+}
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.info-column {
+    position: absolute;
+    box-sizing: border-box;
+    display:flex;
+    height:100%;
+    width:70%;
+    right:0;
+    padding: 5px;
+}
+.info {
+    font-size: 12px;
+    line-height: 0.5;
+}
+.link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+}
+.link:hover {
+    color: navy;
+}
+.link:visited {
+    color: purple;
+}
+.qr {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 5px;
+    right: 5px;
+}
+.bold {
+    font-weight: bold;
+}
+
+@media print {
+    body {
+        background: white;
+    }
+    .link {
+        color: black;
+        font-size: 12px;
+        font-weight: normal;
+    }  
+}
