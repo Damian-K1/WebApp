@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>In-Class Exercise</title>
+    <link rel="stylesheet" href="in_class.css">
 </head>
 <body>
     <h1>Basic Forms</h1>
@@ -12,16 +13,10 @@
         <button type="submit" id="myButton">Add Task</button>
     </form>
 
-    <script>
-        let form = document.getElementById("taskForm");
-        form.action = "https://google.com";
-        form.addEventListener("submit", function(event) {
-            
-            
+    <p id="errorMessage" class="error"></p>
 
-        });
+    <ul id="taskList"></ul>
 
-
-    </script>
+    <script src="in_class.js"></script>
 </body> 
 </html>
