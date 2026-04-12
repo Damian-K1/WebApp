@@ -10,7 +10,8 @@
     <!------------ Navigation Bar ------------>
      <nav>
         <h1>Damian's Portfolio</h1>
-        <div>
+        <button class="nav-toggle" id="nav-toggle">☰</button>
+        <div class="nav-links">
             <ul>
                 <li><a href="#about-me">ABOUT ME</a></li>
                 <li><a href="#accomplishments">ACCOMPLISHMENTS</a></li>
@@ -25,11 +26,9 @@
 
     <!-- About Me --------->
      <section id="about-me">
-        <h1>About Me</h1>
-        <!-- Place an image of myself here once I have one. 
-        <img src="images/profile.jpg" alt="Profile Image" class="profile-image">
-        -->
         
+        <img src="images/Self-Portrait.jpg" alt="Profile Image" class="profile-image">
+        <h1>About Me</h1>
         <p>
             I am an Information Technology student with a focus on web development and software engineering. 
             I have experience building both individual and team-based projects, including web applications 
@@ -60,10 +59,10 @@
             <li>Grade Point Average of 3.7 out of 4.0</li>
             <li>Dean's List for Academic Excellence:</li>
                 <ul>
-                    <li>Fall 2022</li>
-                    <li>Spring 2023</li>
-                    <li>Spring & Fall 2024</li>
-                    <li>Spring & Fall 2025</li>
+                    <li>2022-2023 Academic Year</li>
+                    <li>Spring 2024</li>
+                    <li>2024-2025 Academic Year</li>
+                    <li>Fall 2025</li>
                 </ul>
             <li>Completed Degrees:</li>
                 <ul>
@@ -104,21 +103,46 @@
     <!-- Projects --------->
      <section id="projects">
         <h1>Projects</h1>
-        <p>This is just filler text for this section of the project to pad out the page for the navigation. Please ignore this section because it is not finished. The three finished pages are About Me, Accomplishments, and Skills. 
-            I repeat, this is just filler text for this section of the project. Please ignore this section because it is not finished. The three finished pages are About Me, Accomplishments, and Skills. 
-            I repeat, this is just filler text for this section of the project. Please ignore this section because it is not finished. The three finished pages are About Me, Accomplishments, and Skills. 
-            I repeat, this is just filler text for this section of the project. Please ignore this section because it is not finished. The three finished pages are About Me, Accomplishments, and Skills. 
-            I repeat, this is just filler text for this section of the project. Please ignore this section because it is not finished. The three finished pages are About Me, Accomplishments, and Skills.</p>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>AI-Powered Sermon Assistant</h3>
+                <p class="project-description">
+                    A full-stack web application designed to assist pastors in generating and organizing
+                    sermon content using AI. Developed over the course of a year, the system focuses on
+                    usability, performance, and real-world application.
+                </p>
+                <ul class="project-features">
+                    <li>AI-generated sermon outlines and content</li>
+                    <li>Multi-user interaction support</li>
+                    <li>Custom prompt input system</li>
+                    <li>Responsive web interface</li>
+                </ul>
+                <p class="project-tech">
+                    <strong>Technologies:</strong> Natural Language Processing, Machine Learning, Python, Django, Flutter, Dart
+                </p>
+            </div>
+        </div> 
      </section>
 
     <!-- Contact ---------->
      <section id="contact">
         <h1>Contact Information</h1>
-        <p>This is just filler text for this section of the project to pad out the page for the navigation. Please ignore this section because it is not finished. The three finished pages are About Me, Accomplishments, and Skills. 
-            I repeat, this is just filler text for this section of the project. Please ignore this section because it is not finished. The three finished pages are About Me, Accomplishments, and Skills. 
-            I repeat, this is just filler text for this section of the project. Please ignore this section because it is not finished. The three finished pages are About Me, Accomplishments, and Skills. 
-            I repeat, this is just filler text for this section of the project. Please ignore this section because it is not finished. The three finished pages are About Me, Accomplishments, and Skills. 
-            I repeat, this is just filler text for this section of the project. Please ignore this section because it is not finished. The three finished pages are About Me, Accomplishments, and Skills.</p>
+        <p class="contact-intro">Feel free to reach out for opportunities, collaborations, or questions.</p>
+
+    <div class="contact-container">
+        <div class="contact-item">
+            <strong>Email</strong>
+            <p><a href="mailto:damiankimbrough62@gmail.com">damiankimbrough62@gmail.com</a></p>
+        </div>
+        <div class="contact-item">
+            <strong>Phone</strong>
+            <p><a href="tel:+14792574461">(479) 257-4461</a></p>
+        </div>
+        <div class="contact-item">
+            <strong>LinkedIn</strong>
+            <p><a href="https://www.linkedin.com/in/damian-kimbrough-0286a8227/" target="_blank">View Profile</a></p>
+        </div>
+    </div>
      </section>
 
     <!------------ Footer ------------>
@@ -126,5 +150,6 @@
         <p>Copyright 2026 Damian's Portfolio</p>
      </footer>
 
+    <script src="script.js"></script>     
 </body>
 </html>
